@@ -1,0 +1,57 @@
+
+.search-field {
+    border: 1px solid rgb(78, 65, 65);
+    border-radius: 35px;
+    width: 80%;
+}
+
+.text-input {
+    background-color: inherit;
+    border-style: hidden;
+}
+
+.text-input:focus {
+    outline: none;
+}
+
+.bi-mic {
+    font-size: 30px;
+    background-color: inherit;
+}
+
+.search-button button:hover{
+    background-color: rgb(159, 160, 163);
+
+}
+
+#text-result {
+    background-color: inherit;
+    border-style: hidden;
+
+}
+
+#text-result:focus {
+    outline: none;
+}
+
+@keyframes listening {
+    0% {
+        letter-spacing: 10px;
+    }
+    25%{
+        letter-spacing: 20px;
+    }
+    50% {
+        letter-spacing: 30px;
+    }
+    75%{
+        letter-spacing: 20px;
+    }
+    100% {
+        letter-spacing: 10px;
+    }
+}
+
+
+
+

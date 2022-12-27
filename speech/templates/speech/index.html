@@ -1,0 +1,30 @@
+{% extends "speech/layout.html" %}
+{% load static %}
+
+{% block body %}
+<div class="mt-5">
+    <div class="d-flex justify-content-center">
+        <h2>AI Collectives</h2>
+   </div>
+   <form >
+        <div class="d-flex justify-content-center">
+                <div class="search-field row">
+                    <input id="text-input" class="col text-input" type="text"  autofocus>
+                    <span class="col-1 d-flex justify-content-center"><i id="mic" class="bi bi-mic"></i></span>        
+                </div>
+        </div>               
+        <div class="search-button d-flex justify-content-center mt-3">
+            <input id="btn-search" type="button" class="btn btn-secondary " value="Search">
+        </div>            
+   </form>
+   <div class="d-flex justify-content-center mt-5 row">
+        <textarea id="text-result" class="col-10" rows="6" readonly></textarea>
+   </div>
+   
+   
+   
+</div>
+{% endblock %}
+{% block script %}
+    <script src="{% static 'speech/index.js' %}"></script>
+{% endblock %}
